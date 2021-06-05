@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <meta translate="yes">
+        <meta charset="UTF-8">
+        <meta name="description" content="Cita cualquier web en formato APA fácil, rápido y seguro">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keyworks" content="citar apa, citar, citar web, citar tarea, apa, cita web">
+        <title>Citar en APA</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="script/generarficha.js"></script>
+    </head>
+    <div id="formulariocita">
+        <body>
+            <h1>Rellena la tabla con los datos del sitio web que deseas citar</h1>
+            <table>
+                <tr>
+                    <td class="ajustecelda"><strong>Autor(es):</strong></td><td><input class="entradatexto" id='autor' type="text"/></td>
+                </tr>
+                <tr>
+                    <td class="ajustecelda"><strong>Año de publicación del artículo:</strong></td><td><input class="entradatexto" id='publicacion' type="text"/></td>
+                </tr>
+                <tr>
+                    <td class="ajuste celda"><strong>Título del artículo:</strong></td><td><em><input id="titulo" class="entradatexto" type="text"/></em></td>
+                </tr>
+                <tr>
+                    <td class="ajuste celda"><strong>Fecha de consulta del sitio:</strong></td><td><input class="entradatexto" id='fechaconsulta' type="text"/></td>
+                </tr>
+                <tr>
+                    <td class="ajustecelda"><strong>Asociación que publicó el sitio:</strong></td><td><input class="entradatexto" id='asociacionpublicadora' type="text"/></td>
+                </tr>
+               <tr>
+                   <td class="ajuste celda"><strong>URL del sitio:</strong></td><td><input class="entradatexto" id='urlsitio' type="text"/></td>
+               </tr>    
+            </table>
+            <input id="generarficha" type="button" onclick="notEmpty()" value="Generar ficha"/>
+            <fieldset id="resultadofichacita">
+                <legend>La ficha bibliográfica es:</legend>
+                <p id="citagenerada"></p>
+            </fieldset>
+            <h5>Copee la cita del recuadro y péguela en su documento</h5>
+            <hgroup id="recomendaciones">
+                <h5>Recomendaciones generales:</h5>
+                <h6>1. Recuerda verificar la ortografía (el uso de mayúsculas en nombres propios de autores, acentos, etc).</h6>
+                <h6>2. En el campo "Autor" sólo se escribe el apellido paterno y de los nombres, únicamente se escribe la letra inicial abreviada con punto. (Ejemplo: Okuda, M.)</h6>
+                <h6>3. Si la fuente tiene más de un autor, coloca el ampersan (&) entre ambos nombre; si son mas, sepáralos con "," (comas) y usa "&" antes del último nombre. (Ejemplo: Kats, I., Gbayan, K., & Aghajan, H.)</h6>
+                <h6>4. Una vez copiada la ficha a tu documento, coloca el título del artículo en itálicas (Ejemplo: <i>Indicadores semanales</i>)</h6>
+                <h6>5. La fecha va en el formato: Mes, día, año (Ejemplo: diciembre 20, 2020)</h6>
+                <h6>6. Es importante desactivar extensiones que bloquean funciones de JavaScript</h6>
+            </hgroup>
+            <h4>Si tu investigación es muy extensa o no encuentras fuentes confiables, prueba</h4>
+            <h4><a href="https://scholar.google.com/" target="_blank">Google Académico</a></h4>
+        <script src="script/generarficha.js"></script>
+        </body>
+    </div>
+</html>
